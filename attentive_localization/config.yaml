@@ -1,0 +1,50 @@
+ROS:
+    ORB_FEATURES: "/orb_features_pixel"
+    ORB_CLOUD: "/orb_cloud"
+    ORB_POSE: "/stereo_pose"
+    SALIENCY_PIXEL: "/saliency/image"
+    SALIENCY_NORM: "/saliency/image_norm"
+
+ORB:
+    X_BINS: 8
+    Y_BINS: 6
+    X_DIM: 640
+    Y_DIM: 480
+    ADAP_QLEN: 20
+    ADAP_SPEED: 24
+    PLOT_WEIGHT_MAT: False
+    ADAP_CAM_SPEED: False
+    FIX_CAM_SPEED: 3
+    MAX_YAW: 70
+    MAX_PITCH: 60
+
+SAL:
+    ADAP_QLEN: 20
+    ADAP_SPEED: 24
+    SCALE: 40 #sal downsample low:40 high:20
+    PLOT_WEIGHT_MAT: False
+    ADAP_CAM_SPEED: False
+    FIX_CAM_SPEED: 2.5
+    MAX_YAW: 70
+    MAX_PITCH: 60
+
+FUSION:
+    X_DIM: 640
+    Y_DIM: 480
+    ADAP_QLEN: 20
+    ADAP_SPEED: 24
+    SCALE: 40 #sal downsample
+    THRESHOLD: 0.5
+    WEIGHT_MASK: 2
+    PLOT_WEIGHT_MAT: False
+    ADAP_CAM_SPEED: False
+    FIX_CAM_SPEED: 2.5
+    MAX_YAW: 70
+    MAX_PITCH: 60
+
+
+CLOUD:
+    ADAP_CAM_SPEED: False
+    FIX_CAM_SPEED: 1
+    MAX_YAW: 80
+    MAX_PITCH: 60
